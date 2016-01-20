@@ -174,18 +174,40 @@ Flow Control
         150                 ;     then start at the top
         (+ y 40)))          ;     otherwise move
 
+```
 
+```clojure
 (cond                       ; so much more legible than nested ifs
   (> (+ y 40) 150) -150
   (< (+ y 40) -150) 150
   :else (+ y 40)))
+```
+</section>
 
+<section ng-controller="NarrativeController">
+#### General form of `cond` operator
+
+```clojure
 (cond
   predicate1 expression-to-evaluate-when-predicate1-is-true
   predicate2 expression-to-evaluate-when-predicate2-is-true
   ...
-  :else expression-to-evaluate-when-all-above-are-false)
+  :else      expression-to-evaluate-when-all-above-are-false)
 ```
+</section>
+
+<section ng-controller="NarrativeController">
+#### `cond` example
+
+```clojure
+(cond
+  (< x 10)    "x is smaller than 10"
+  (< 10 x 20) "x is between 10 and 20"
+  (< 20 x 30) "x is between 20 and 30"
+  (< 30 x 40) "x is between 30 and 40"
+  :else       "x is bigger than 40")
+```
+
 </section>
 
 <section>
