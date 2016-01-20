@@ -177,17 +177,18 @@ ng-click="block21=!block21"></button>
 {: ng-show="block62" .description}
 
 ```clojure
-(cond
+(if (> (+ y 40) 150)        ; if over the top
+    -150                    ;   then start at the bottom
+    (if (< (+ y 40) -150)   ;   if below the bottom
+        150                 ;     then start at the top
+        (+ y 40)))          ;     otherwise move
+
+
+(cond                       ; so much more legible than nested ifs
   (> (+ y 40) 150) -150
   (< (+ y 40) -150) 150
   :else (+ y 40)))
-```
-</section>
 
-<section ng-controller="NarrativeController">
-#### General form of `cond` operator
-
-```clojure
 (cond
   predicate1 expression-to-evaluate-when-predicate1-is-true
   predicate2 expression-to-evaluate-when-predicate2-is-true
