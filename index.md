@@ -47,7 +47,7 @@ Please look at [README.md](README.md) instead. :green_heart: :blue_heart:
 {:style="text-align: left;"}
 
 {:style="width: 100%;"}
-* [Snowflakes](https://github.com/ClojureBridge/drawing/blob/master/curriculum/create-something.md) (animation)
+* [Snowflakes](https://github.com/ClojureBridge/drawing/blob/master/curriculum/create-something.md) Animation
 * [Land of Quil](http://landofquil.we-do-fp.berlin/) Several Quil examples you can try out
 
 &nbsp;
@@ -57,8 +57,8 @@ Please look at [README.md](README.md) instead. :green_heart: :blue_heart:
 
 {:style="width: 100%;"}
 * [Twinkle Twinkle Little Star](https://github.com/ClojureBridge/tones/blob/master/curriculum/01-piano-chords.md) Making sounds with Overtone
-* [Global Growth](https://github.com/ClojureBridge/global-growth)  (web app with REST api)
-* [Caesar Cipher](http://clojurebridge.github.io/community-docs/docs/exercises/caesar-cipher/) (mini exercise of Strings and Characters)
-* [Turtles Walk](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (more function study)
+* [Global Growth](https://github.com/ClojureBridge/global-growth) Web app with REST api
+* [Caesar Cipher](http://clojurebridge.github.io/community-docs/docs/exercises/caesar-cipher/) Mini exercise of Strings and Characters
+* [Turtles Walk](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) More function study
 
 </section>
