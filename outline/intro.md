@@ -115,7 +115,6 @@ Introduction to Programming with Clojure
 ```clojure
 (print-str "Hello, World!")
 (+ 3 4)
-(forward :trinity 40)
 ```
 
 #### Parentheses <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
@@ -132,7 +131,7 @@ Introduction to Programming with Clojure
 > Next to the parentheses, we see the instructions to the
 > computer. That instruction is normally what we call a _function_.
 > The functions do all the hard work in Clojure.
-> `print-str`, `+` and `forward` are all functions.
+> `print-str` and `+` are functions.
 > When these functions get run, they return a some type of value.
 > Clojure functions always return a value.
 {: ng-show="block32" .description}
