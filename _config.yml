@@ -13,7 +13,7 @@ github_username:  ClojureBridge
 markdown: kramdown
 kramdown:
   input: GFM
-highlighter: null
+pygments: false
 baseurl: /curriculum
 encoding: UTF-8
 exclude:
@@ -28,3 +28,4 @@ exclude:
 
 # Port number
 port: 5555
+
