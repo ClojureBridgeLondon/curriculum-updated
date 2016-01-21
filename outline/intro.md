@@ -113,8 +113,9 @@ Introduction to Programming with Clojure
 {: .slide_title .slide}
 
 ```clojure
-(print-str "Hello, World!")
 (+ 3 4)
+(max 8 17 2)
+(print-str "Hello, World!")
 ```
 
 #### Parentheses <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
@@ -131,17 +132,19 @@ Introduction to Programming with Clojure
 > Next to the parentheses, we see the instructions to the
 > computer. That instruction is normally what we call a _function_.
 > The functions do all the hard work in Clojure.
-> `print-str` and `+` are functions.
+> `+`, `max`, and `print-str` are all functions.
 > When these functions get run, they return a some type of value.
 > Clojure functions always return a value.
 {: ng-show="block32" .description}
 
 #### Arguments <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
 
-> Many functions take in _arguments_--which are everything else inside
-> the enclosing parentheses after the function--.
-> `print-str` takes "Hello, World!" and returns a string.
-> `+` takes 3 and 4, adds them, and returns 7.
+> Many functions take in _arguments_ (everything else inside
+> the enclosing parentheses function).
+>
+> * `+` takes 3 and 4, adds them, and returns 7.
+> * `max` takes 8, 17, and 2, and returns the highest: 17.
+> * `print-str` takes "Hello, World!" and prints it out.
 {: ng-show="block33" .description}
 </section>
 
@@ -172,8 +175,9 @@ Introduction to Programming with Clojure
 
 ```clojure
 ;; example functions from a previous slide
-(print-str "Hello, World!")  ; a well-known hello world
 (+ 3 4)                      ; why not 3 + 4? figure out later
+(max 8 17 2)                 ; there's a min too
+(print-str "Hello, World!")  ; a well-known hello world
 ```
 </section>
 
