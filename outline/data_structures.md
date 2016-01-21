@@ -84,31 +84,17 @@ collections together.
 </section>
 
 <section ng-controller="NarrativeController">
-#### Example <button class="link" ng-bind-html="details" ng-model="block41" ng-click="block41=!block41"></button>
-
-> When there are a couple of turtles,
-> `(turtle-names)` command will return turtle names in the form of a
-> vector.
-{: ng-show="block41" .description}
-
-```clojure
-(turtle-names)
-;=> [:trinity :neo :oracle :cypher]
-```
-</section>
-
-
-<section ng-controller="NarrativeController">
 #### Creation <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
 
-> The next two functions are used to make new vectors. The `vector`
-> function takes any number of items and puts them in a new vector.
-> `conj` is an interesting function that you'll see used with all the
-> data structures. With vectors, it takes a vector and an item and
-> returns a new vector with that item added to the end of the vector.
-> Why the name `conj`? `conj` is short for conjoin, which means to 
-> join or combine. This is what we're doing: we're joining the new
-> item to the vector.
+> Instead of writing a vector with square brackets, you can also use the vector
+> function to create a vector. All arguments are collected and placed inside a new
+> vector.
+>
+> `conj` takes a vector and some other values, and returns a new vector with the
+> extra value added. `conj` is short for conjoin, which means to join or combine.
+> This is what we're doing: we're joining the extra value to the vector. `conj`
+> can be used with any kind of collection. Right now the only kind of
+> collection we've encountered is a vector.
 {: ng-show="block61" .description}
 
 ```clojure
@@ -146,20 +132,10 @@ be confusing.
 </section>
 
 <section>
-#### EXERCISE 1: See turtle names
+#### EXERCISE: Make a vector
 {: .slide_title .slide}
 
-* Go to `walk.clj` file
-* Type `(add-turtle :neo)` and evaluate this line by hitting hit <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>x</kbd> or <kbd>cmd</kbd> <kbd>shift</kbd> + <kbd>x</kbd>
-* Repeat adding turtles a couple of times with different names
-* Type `(turtle-names)`, evaluate this line and see the result
-</section>
-
-<section>
-#### EXERCISE 2: Make a vector
-{: .slide_title .slide}
-
-* Go to insta-REPL
+* Go to your REPL
 * Make a vector of the high temperatures for the next 7 days in the
   town where you live.
 * Then use the `nth` function to get the high temperature for next
@@ -200,21 +176,6 @@ be confusing.
 {:first "Sally" :last "Brown"}
 {:a 1 :b "two"}
 {}
-```
-</section>
-
-<section ng-controller="NarrativeController">
-#### Example <button class="link" ng-bind-html="details" ng-model="block103" ng-click="block103=!block103"></button>
-
-> When turtle received commands such that `forward` or `right`,
-> those return the result as a form of map of map.
-{: ng-show="block103" .description}
-
-```clojure
-(forward 40)
-;=> {:trinity {:length 40}}
-(right 90)
-;=> {:trinity {:angle 90}}
 ```
 </section>
 
@@ -326,70 +287,28 @@ be confusing.
 #### Vector of Maps
 
 ```clojure
-(state-all)
-;=> [{:trinity {:x -1.7484556000744965E-6, :y 39.99999999999996, :angle 90, :color [106 40 126]}}
-{:neo {:x 21.213202971967114, :y 21.213203899225725, :angle 45, :color [0 64 0]}}
-{:oracle {:x -49.99999999999981, :y -4.3711390001862375E-6, :angle 180, :color [43 101 236]}}]
+(def characters
+  [{:name "Snoopy"
+    :species "dog"}
+   {:name "Woodstock"
+    :species "bird"}
+   {:name "Charlie Brown"
+    :species "human"}])
 
-(def states (state-all))
-;=> #'clojurebridge-turtle.walk/states
+(:name (first characters))
+;;=> "Snoopy"
 
-(first states)
-;=> {:trinity {:x -1.7484556000744965E-6, :y 39.99999999999996,
-:angle 90, :color [106 40 126]}}
-```
-</section>
-
-<section>
-#### Map of Maps
-
-```clojure
-(def st (first states))
-;=> #'clojurebridge-turtle.walk/st
-
-st
-;=> {:trinity {:x -1.7484556000744965E-6, :y 39.99999999999996, :angle
-90, :color [30 30 30]}}
-
-(:trinity st)
-;=> {:x -1.7484556000744965E-6, :y 39.99999999999996, :angle 90, :color [30 30 30]}
-
-(get-in st [:trinity :angle])
-;=> 90
+(map :name characters)
+;;=> ("Snoopy" "Woodstock" "Charlie Brown")
 ```
 </section>
 
 
 <section>
-#### EXERCISE 3: See turtles states
+#### EXERCISE: Modeling Yourself
 {: .slide_title .slide}
 
-* Go to `walk.clj` file
-* Click "Run with REPL" or type <kbd>ctrl</kbd>/<kbd>cmd</kbd> + <kbd>e</kbd>
-* Try examples of previous two slides
-* See what values you get
-
-> Every time you write a line of code,
-> hit <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>x</kbd> or 
-> <kbd>cmd</kbd> <kbd>shift</kbd> + <kbd>x</kbd>
-> to evaluate it one by one.
-
-```clojure
-(state-all)
-(def states (state-all))
-(first states)
-(def st (first states))
-st
-(:trinity st)
-(get-in st [:trinity :angle])
-```
-</section>
-
-<section>
-#### EXERCISE 4: Modeling Yourself
-{: .slide_title .slide}
-
-* Using the Clojure REPL in the bottom left
+* Using the Clojure REPL
     - (Option) You may create a new file and write code in the file. To
     evaluate, select the code you want and hit <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>x</kbd> or <kbd>cmd</kbd> <kbd>shift</kbd> + <kbd>x</kbd>, or press the "Eval" button
 * Make a map representing yourself
@@ -398,7 +317,7 @@ st
 </section>
 
 <section>
-#### EXERCISE 5 [BONUS]: Modeling your classmates
+#### EXERCISE [BONUS]: Modeling your classmates
 {: .slide_title .slide}
 
 * First, take the map you made about yourself in previous exercise.
