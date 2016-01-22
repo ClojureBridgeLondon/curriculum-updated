@@ -1,6 +1,6 @@
 # Quil Cheatsheet
 
-## Shapes -- (these only work in the draw function!)
+## Shapes
 
 `(line x1 y1 x2 y2)`  
 Draws a line (a direct path between two points) to the screen. x1, y1, x2 and y3 are all numbers which are being used as coordinates, or pixels from the top left on your screen.
@@ -54,7 +54,7 @@ What do you think this does?
 
 ## Time
 
-`(frame-count)` => number
+`(frame-count)` => number  
 The number of frames displayed since the program started. Give it a try while wrapping it in `(mod num div)` a modulo function e.g. `(ellipse 100 100 (mod (frame-count) 30) (mod (frame-count) 30))`
 
 
