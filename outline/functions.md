@@ -35,57 +35,36 @@ Functions
 </section>
 
 <section ng-controller="NarrativeController">
-#### An example function <button class="link" ng-model="block21" ng-click="block21=!block21">Details</button>
+#### Defining functions <button class="link" ng-model="block21" ng-click="block21=!block21">Details</button>
 
-> * `defn` specifies that we are defining a function.
-> * `total-bill` is the *name* of this function.
-> * The string on the next line is the *documentation* for the function, which explains what the function does. This is optional.
-> * `[subtotal]` is the list of *arguments*. Here, we have one argument called `subtotal`.
-> * `(* 1.08 subtotal)` is the *body* of the function. This is what executes when we use the function.
+> * We use `defn` to define a function.
+> * We give it a *name* so we may call it later i.e. `add`
+> * A Vector is used to specify the function's *arguments* i.e. `[x y]`
+> * A String can be provided for a description e.g. `"Adds together..."`
+> * The *body* is the form (thing in parentheses) that follows i.e. `(+ x y)` 
+> * We call the function by creating a form with it's name and arguments i.e. `(add 1 2)`
 {: ng-show="block21" .description}
 
 ```clojure
-(defn total-bill
-  "Given subtotal of bill, return total after tax."
-  [subtotal]
-  (* 1.08 subtotal)) 
+(defn add                        ; name
+  [x y]                          ; arguments
+  "Adds together two numbers"    ; documentation
+  (+ x y))                       ; body
 
-(total-bill 8.5)  ;=> 9.18
-(total-bill 50)   ;=> 54.0
-(total-bill 50/6) ;=> 9.0
+(add 1 2)         ;=> 3 
+(add (add 1 2) 4) ;=> 7
 ```
 </section>
 
-<section ng-controller="NarrativeController">
-#### A function with multiple arguments <button class="link" ng-model="block41" ng-click="block41=!block41">Details</button>
-
-> Functions can also take more than one argument. Let's make a
-> `total-with-tip` function that takes a tip percentage, in addition
-> to the subtotal, and calculates the total amount paid:
-{: ng-show="block41" .description}
-
-```clojure
-(defn total-with-tip
-  "Given subtotal, return total after tax and tip."
-  [subtotal tip-pct]
-  (* 1.08 subtotal (+ 1 tip-pct)))
-
-(total-with-tip 12.50 0.18) ;=> 15.93
-(total-with-tip 50 0.18)    ;=> 63.72
-```
-</section>
 
 <section ng-controller="NarrativeController">
 ### EXERCISE: Find per-person share of bill among a group
 {: .slide_title .slide}
 
-* Create a new function, `share-per-person`, that takes three
-  arguments: the subtotal, the tip percent, and the number of people
-  in the group.
+* Create a new function, `add-one`, that takes a single argument
+  and adds one to it.
 
-* It should call our `total-with-tip` function but change the result
-  to return the average amount each person should pay.
-
+* It should call our `add` function.
 </section>
 
 <section ng-controller="NarrativeController">
