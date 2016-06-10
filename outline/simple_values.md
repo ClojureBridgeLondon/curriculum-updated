@@ -104,9 +104,9 @@ nil
 
 
 ```clojure
-:trinity
-:first
-:last
+:forename
+:surname
+:date-of-birth
 ```
 </section>
 
