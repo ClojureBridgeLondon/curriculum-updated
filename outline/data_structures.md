@@ -322,7 +322,7 @@ be confusing.
 
 * First, take the map you made about yourself in previous exercise.
 * Then, create a vector of maps containing the first name, last name and hometown of two or three other classmates around you.
-* Lastly, add your map to their information using [conj](http://grimoire.arrdem.com/1.6.0/clojure.core/conj/).
+* Lastly, add your map to their information using [conj](http://clojuredocs.org/clojure.core/conj).
 </section>
 
 {% comment %}

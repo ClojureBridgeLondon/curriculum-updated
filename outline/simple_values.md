@@ -104,9 +104,9 @@ nil
 
 
 ```clojure
-:trinity
-:first
-:last
+:forename
+:surname
+:date-of-birth
 ```
 </section>
 
@@ -207,7 +207,7 @@ Prefix: (+ (- (+ (+ 1 (/ (* 2 3) 4)) 5) (/ (* 6 7) 8)) 9)
 </section>
 
 <section ng-controller="NarrativeController">
-### Why prefix is better?
+### The benefits of prefix notation
 
 #### Explicit precedence <button class="link" ng-bind-html="details" ng-model="block131" ng-click="block131=!block131"></button>
 
