@@ -263,7 +263,7 @@ Introduction to Programming with Clojure
 #### EXERCISE 2: Evaluate file and line
 
 * In NightCode, at the top left, click on "New Project"
-* Choose a location and a name
+* Choose a location and a name (nb: don't call it `quil`)
 * Click on "Graphics" (the button with a big "Q" on it)
 * Click on "Run with REPL", a window will pop up with a grey circle
 * Find the line `(fill 192)` and change it to `(fill 250 20 20)`
