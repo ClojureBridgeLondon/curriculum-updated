@@ -275,10 +275,7 @@ Introduction to Programming with Clojure
 #### EXERCISE 3: Look at Clojure docs
 
 * In the REPL, try to look up the documentation for a function you have used
-* You can use the `(doc function-name)` command to do this. For instance, try typing `(doc fill)` into the REPL
-* Now, make sure the "Doc" button at the top of window is selected (it'll be a lighter colour when selected)
-* In your Clojure file, start typing the name of a function
-* Before you even finish typing, the documentation for that function should appear
+* You can use the `(clojure.repl/doc function-name)` command to do this. For instance, try typing `(clojure.repl/doc fill)` into the REPL
 </section>
 
 {% comment %}
