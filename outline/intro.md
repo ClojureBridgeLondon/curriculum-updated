@@ -276,6 +276,7 @@ Introduction to Programming with Clojure
 
 * In the REPL, try to look up the documentation for a function you have used
 * You can use the `(clojure.repl/doc function-name)` command to do this. For instance, try typing `(clojure.repl/doc fill)` into the REPL
+* You can also go to [ClojureDocs](http://clojuredocs.org) and look up docs online
 </section>
 
 {% comment %}
