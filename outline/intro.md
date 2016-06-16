@@ -263,7 +263,7 @@ Introduction to Programming with Clojure
 #### EXERCISE 2: Evaluate file and line
 
 * In NightCode, at the top left, click on "New Project"
-* Choose a location and a name
+* Choose a location and a name (nb: don't call it `quil`)
 * Click on "Graphics" (the button with a big "Q" on it)
 * Click on "Run with REPL", a window will pop up with a grey circle
 * Find the line `(fill 192)` and change it to `(fill 250 20 20)`
@@ -275,10 +275,8 @@ Introduction to Programming with Clojure
 #### EXERCISE 3: Look at Clojure docs
 
 * In the REPL, try to look up the documentation for a function you have used
-* You can use the `(doc function-name)` command to do this. For instance, try typing `(doc fill)` into the REPL
-* Now, make sure the "Doc" button at the top of window is selected (it'll be a lighter colour when selected)
-* In your Clojure file, start typing the name of a function
-* Before you even finish typing, the documentation for that function should appear
+* You can use the `(clojure.repl/doc function-name)` command to do this. For instance, try typing `(clojure.repl/doc fill)` into the REPL
+* You can also go to [ClojureDocs](http://clojuredocs.org) and look up docs online
 </section>
 
 {% comment %}
