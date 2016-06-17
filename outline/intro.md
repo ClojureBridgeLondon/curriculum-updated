@@ -267,7 +267,7 @@ Introduction to Programming with Clojure
 * Click on "Graphics" (the button with a big "Q" on it)
 * Click on "Run with REPL", a window will pop up with a grey circle
 * Find the line `(fill 192)` and change it to `(fill 250 20 20)`
-* With your cursor on that line click on `Eval` (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>x</kbd> or <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>x</kbd>)
+* Select the code from lines 7 to 10 with your cursor (make sure all of it is selected) and click on `Eval Selection` (<kbd>ctrl</kbd> + <kbd>E</kbd> or <kbd>cmd</kbd> + <kbd>E</kbd>)
 * See what happens
 </section>
 
