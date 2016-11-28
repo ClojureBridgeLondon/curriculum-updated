@@ -47,8 +47,8 @@ Functions
 
 ```clojure
 (defn add                        ; name
-  [x y]                          ; arguments
   "Adds together two numbers"    ; documentation
+  [x y]                          ; arguments
   (+ x y))                       ; body
 
 (add 1 2)         ;=> 3 
