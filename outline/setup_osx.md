@@ -50,7 +50,15 @@ Expected result:
 
 ## Making sure Java is installed
 
-Run `java -version` in your terminal. If you do not have Java installed, OS X will prompt you to install it. Follow all of the directions OS X gives you, then return to this part of the tutorial and run `java -version` again.
+> If you have OS X version 10.11 (El Capitan), you don't have Java installed.
+> You need to install Java as well.
+> Download Java from <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html> and follow the instruction. Once installation finishes, set `JAVA_HOME` environment variable on the terminal.
+> `export JAVA_HOME=/usr/libexec/java_home -v 1.8`
+>
+> If you have a trouble, the article, <http://osxdaily.com/2015/10/17/how-to-install-java-in-os-x-el-capitan/>, may help.
+
+
+Run `java -version` in your terminal. If you do not have Java installed, OS X will prompt you to install it (if your OS X is 10.10 or older). Follow all of the directions OS X gives you, then return to this part of the tutorial and run `java -version` again.
 
 If Java is installed, you will see something like this in your terminal:
 
@@ -170,7 +178,6 @@ This is a Clojure program.
 <img src="img/nightcode-open-project.png" alt="Testing apps - open welcometoclojurebridge" width="500">
 ![Testing apps - core.clj](img/nightcode-welcometoclojurebridge-core.png)
 
-
 The next step is to run the code shown in the window.
 Click "Run with REPL" on the bottom of the right side.
 It may take a while.
@@ -214,6 +221,38 @@ You should see the turtle moved upword:
 Congratulations! You have opened and run your first Clojure apps, and
 your install and setup are all completed!
 
+## For convenience
+
+### automatic closing of parentesses
+
+[Enabling auto-closing parens.](http://stackoverflow.com/questions/27818505/light-table-parentheses-are-not-auto-closing)
+__This has been disabled, because it tends to break with none english kayboard layouts!__
+But if you use the EN layout you should be fine.
+
+Quote from the link:
+> What I needed to do was add this form to the User behaviors configuration:
+
+> To do so, I followed these steps:
+
+> * `Ctrl-Space` to open Commands
+> * Type `user behaviors` and click the proposed command
+> This open a file that you can edit to add
+> `[:app :lt.objs.settings/pair-keymap-diffs]`
+
+
+### show line numbers
+
+To show line numbers:
+* `Ctrl-Space` to open Commands
+* Type `user behaviors` and click the proposed command
+* This open a file that you can edit to add `[:editor :lt.objs.editor/line-numbers]`
+
+### down wrap lines around
+
+To not have lines wrap around if they are to long for the screen:
+* `Ctrl-Space` to open Commands
+* Type `user behaviors` and click the proposed command
+* This open a file that you can edit to add `[:editor :lt.objs.editor/no-wrap]`
 
 If you want to know what the turtle (*a small triangle*) can do,
 see [Turtle App API](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) and

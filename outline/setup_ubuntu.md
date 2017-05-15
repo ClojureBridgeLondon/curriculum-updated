@@ -96,7 +96,6 @@ Go to the [Nightcode site](https://sekao.net/nightcode/). On the page there, you
 Once the download finished, we want to start the editor.
 To startup, go into your Downloads folder (or wherever you save files from your browser) and run the nightcode-x.y.z-standalone.jar file using `java` command.
 
-
 Open a terminal and run the following commands:
 
 ```bash
@@ -150,7 +149,6 @@ button on your keyboard together (abbreviated as Ctrl+D). This should
 take you out of the Clojure REPL and back to your normal terminal
 prompt. Then, the terminal will show you the following message: `user=> Bye for now!`
 
-
 #### Testing Nightcode
 
 If Nightcode isn't started yet or closed, open it by typing the command on terminal:
@@ -178,7 +176,6 @@ This is a Clojure program.
 <img src="img/nightcode-click-import.png" alt="Testing apps - click import" width="500">
 <img src="img/nightcode-open-project.png" alt="Testing apps - open welcometoclojurebridge" width="500">
 ![Testing apps - core.clj](img/nightcode-welcometoclojurebridge-core.png)
-
 
 The next step is to run the code shown in the window.
 Click "Run with REPL" on the bottom of the right side.
@@ -216,6 +213,8 @@ You should see the turtle moved upword:
 
 ![Testing apps - forward](img/nightcode-turtle-forward-40.png)
 
+
+> Pressing the Control button and Space Bar together (abbreviated `Ctrl+Space`) is how you start giving Light Table a command. 
 
 
 #### Success!

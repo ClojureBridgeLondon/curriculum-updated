@@ -163,7 +163,6 @@ button on your keyboard together (abbreviated as Ctrl+D). This should
 take you out of the Clojure REPL and back to your normal command
 prompt. Then, the command prompt will show you the following message: `user=> Bye for now!`
 
-
 #### Testing Nightcode
 
 If Nightcode isn't started yet or closed, open it by typing the command on the command propmt:
@@ -187,6 +186,7 @@ On the top left corner, click "Import" then find the directory,
 `git clone` command. Click "Open."
 In the project directory tree on the left, click on `src` - `welcometoclojurebridge` - `core.clj`. The `core.clj` file will be opened on the right side.
 This is a Clojure program.
+
 
 <img src="img/nightcode-click-import.png" alt="Testing apps - click import" width="500">
 <img src="img/nightcode-open-project.png" alt="Testing apps - open welcometoclojurebridge" width="500">
@@ -229,6 +229,7 @@ You should see the turtle moved upword:
 ![Testing apps - forward](img/nightcode-turtle-forward-40.png)
 
 
+> press the Control button and Space Bar together (abbreviated Ctrl+Space). This is how you start giving Light Table a command
 
 #### Success!
 

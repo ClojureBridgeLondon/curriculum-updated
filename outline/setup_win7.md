@@ -170,7 +170,6 @@ At the bottom left of the screen, type `(+ 1 1)` into the window. It should look
 
 If you see the result, 2, that worked, great!
 
-
 #### Testing apps
 
 Now we will open and run the sample Clojure apps in Nightcode.
@@ -220,6 +219,7 @@ You should see the turtle moved upword:
 
 ![Testing apps - forward](img/nightcode-turtle-forward-40.png)
 
+> press the Control button and Space Bar together (abbreviated Ctrl+Space). This is how you start giving Light Table a command
 
 #### Success!
 
